@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "Hash": "SXesuvhTXMWvXAnk8HI4Eg/xzAJIqLZmHay7BgWQmtA=",
+  "Source": "ProductManagementSystem.API",
+  "BasePath": "_content/ProductManagementSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ProductManagementSystem.API\\wwwroot",
+      "Source": "ProductManagementSystem.API",
+      "ContentRoot": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\",
+      "BasePath": "_content/ProductManagementSystem.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\639ea972-4027-4479-9da5-17d25fa5a296.jpg",
+      "SourceId": "ProductManagementSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\",
+      "BasePath": "_content/ProductManagementSystem.API",
+      "RelativePath": "uploads/639ea972-4027-4479-9da5-17d25fa5a296#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f32u6m6b2m",
+      "Integrity": "G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\639ea972-4027-4479-9da5-17d25fa5a296.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\66893079-0ba0-44de-866f-6b6dc3823bfe.jpg",
+      "SourceId": "ProductManagementSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\",
+      "BasePath": "_content/ProductManagementSystem.API",
+      "RelativePath": "uploads/66893079-0ba0-44de-866f-6b6dc3823bfe#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cusbrf946b",
+      "Integrity": "xI0uncv6miscWEx7a0cAuRG48H8/UjdJ5xKDHYXkV0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\66893079-0ba0-44de-866f-6b6dc3823bfe.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\default.jpg",
+      "SourceId": "ProductManagementSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\",
+      "BasePath": "_content/ProductManagementSystem.API",
+      "RelativePath": "uploads/default#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q6qfdq53l8",
+      "Integrity": "UhcIX1vVeYEOBYV5T1lMd1zQtc3tK4OS4Mao+v7qG3o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\default.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg",
+      "SourceId": "ProductManagementSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\",
+      "BasePath": "_content/ProductManagementSystem.API",
+      "RelativePath": "uploads/ef26e20f-00d3-45d2-a581-85e9e936d5c6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f32u6m6b2m",
+      "Integrity": "G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/639ea972-4027-4479-9da5-17d25fa5a296.f32u6m6b2m.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\639ea972-4027-4479-9da5-17d25fa5a296.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:40:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f32u6m6b2m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/639ea972-4027-4479-9da5-17d25fa5a296.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/639ea972-4027-4479-9da5-17d25fa5a296.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\639ea972-4027-4479-9da5-17d25fa5a296.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:40:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/66893079-0ba0-44de-866f-6b6dc3823bfe.cusbrf946b.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\66893079-0ba0-44de-866f-6b6dc3823bfe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2452895"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xI0uncv6miscWEx7a0cAuRG48H8/UjdJ5xKDHYXkV0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:33:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cusbrf946b"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/66893079-0ba0-44de-866f-6b6dc3823bfe.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xI0uncv6miscWEx7a0cAuRG48H8/UjdJ5xKDHYXkV0Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/66893079-0ba0-44de-866f-6b6dc3823bfe.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\66893079-0ba0-44de-866f-6b6dc3823bfe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2452895"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xI0uncv6miscWEx7a0cAuRG48H8/UjdJ5xKDHYXkV0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:33:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xI0uncv6miscWEx7a0cAuRG48H8/UjdJ5xKDHYXkV0Q="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/default.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\default.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UhcIX1vVeYEOBYV5T1lMd1zQtc3tK4OS4Mao+v7qG3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 08:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UhcIX1vVeYEOBYV5T1lMd1zQtc3tK4OS4Mao+v7qG3o="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/default.q6qfdq53l8.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\default.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UhcIX1vVeYEOBYV5T1lMd1zQtc3tK4OS4Mao+v7qG3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 08:45:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q6qfdq53l8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/default.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UhcIX1vVeYEOBYV5T1lMd1zQtc3tK4OS4Mao+v7qG3o="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ef26e20f-00d3-45d2-a581-85e9e936d5c6.f32u6m6b2m.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f32u6m6b2m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg",
+      "AssetFile": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 11:39:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G2RanVk2uLhIziJBXXKxMNRyIE2mzWm5bKs647AyLNc="
+        }
+      ]
+    }
+  ]
+}

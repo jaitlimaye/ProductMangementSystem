@@ -1,0 +1,15 @@
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProductManagementSystem.BLL.deps.json
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProductManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProductManagementSystem.BLL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.AssemblyInfoInputs.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.AssemblyInfo.cs
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.csproj.CoreCompileInputs.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\refint\ProductManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ref\ProductManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProductManagementSystem.DAL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProductManagementSystem.DAL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductManagementSystem.BLL.csproj.AssemblyReference.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProductM.FFB2DCFD.Up2Date

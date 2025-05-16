@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\639ea972-4027-4479-9da5-17d25fa5a296.jpg",
+      "PackagePath": "staticwebassets\\uploads\\639ea972-4027-4479-9da5-17d25fa5a296.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\66893079-0ba0-44de-866f-6b6dc3823bfe.jpg",
+      "PackagePath": "staticwebassets\\uploads\\66893079-0ba0-44de-866f-6b6dc3823bfe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\default.jpg",
+      "PackagePath": "staticwebassets\\uploads\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jaitl\\source\\repos\\ProjectManagementSystem\\ProjectManagementSystem.API\\wwwroot\\uploads\\ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ef26e20f-00d3-45d2-a581-85e9e936d5c6.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductManagementSystem.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductManagementSystem.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProductManagementSystem.API.props",
+      "PackagePath": "build\\ProductManagementSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductManagementSystem.API.props",
+      "PackagePath": "buildMultiTargeting\\ProductManagementSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProductManagementSystem.API.props",
+      "PackagePath": "buildTransitive\\ProductManagementSystem.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

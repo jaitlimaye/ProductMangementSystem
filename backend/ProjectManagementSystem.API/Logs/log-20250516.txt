@@ -1,0 +1,1558 @@
+2025-05-16 16:23:43.449 +05:30 [INF] User profile is available. Using 'C:\Users\jaitl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-16 16:23:43.961 +05:30 [INF] Now listening on: https://localhost:7291
+2025-05-16 16:23:43.963 +05:30 [INF] Now listening on: http://localhost:5120
+2025-05-16 16:23:44.134 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 16:23:44.136 +05:30 [INF] Hosting environment: Development
+2025-05-16 16:23:44.137 +05:30 [INF] Content root path: C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API
+2025-05-16 16:23:46.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - null null
+2025-05-16 16:23:47.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - 200 null text/html;charset=utf-8 647.0396ms
+2025-05-16 16:23:47.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-16 16:23:47.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_vs/browserLink - null null
+2025-05-16 16:23:47.153 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 49.2779ms
+2025-05-16 16:23:47.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_vs/browserLink - 200 null text/javascript; charset=UTF-8 316.6317ms
+2025-05-16 16:23:47.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - null null
+2025-05-16 16:23:47.702 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.0119ms
+2025-05-16 16:24:03.751 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/login - application/json 48
+2025-05-16 16:24:03.946 +05:30 [INF] CORS policy execution failed.
+2025-05-16 16:24:03.948 +05:30 [INF] Request origin https://localhost:7291 does not have permission to access the resource.
+2025-05-16 16:24:03.952 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 16:24:03.997 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Login(ProductManagementSystem.BLL.DTOs.Auth.LoginRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 16:24:04.375 +05:30 [INF] Login attempt for user dgsd
+2025-05-16 16:24:06.996 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 16:24:07.237 +05:30 [WRN] Login failed for user dgsd
+System.InvalidOperationException: Invalid credentials
+   at ProductManagementSystem.BLL.Services.Auth.AuthService.LoginAsync(LoginRequest req) in C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\Services\Auth\AuthService.cs:line 62
+   at ProductManagementSystem.API.Controllers.AuthController.Login(LoginRequest req) in C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API\Controllers\AuthController.cs:line 50
+2025-05-16 16:24:07.288 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-16 16:24:07.303 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API) in 3300.0518ms
+2025-05-16 16:24:07.308 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 16:24:07.322 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/login - 401 null application/json; charset=utf-8 3570.9118ms
+2025-05-16 16:24:39.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Role - null null
+2025-05-16 16:24:39.768 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.RoleController.Get (ProductManagementSystem.API)'
+2025-05-16 16:24:39.781 +05:30 [INF] Route matched with {action = "Get", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Role.GetRoleResponse]]] Get() on controller ProductManagementSystem.API.Controllers.RoleController (ProductManagementSystem.API).
+2025-05-16 16:24:39.950 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2025-05-16 16:24:40.042 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Microsoft.AspNetCore.Identity.IdentityRole, Microsoft.Extensions.Identity.Stores, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[ProductManagementSystem.BLL.DTOs.Role.GetRoleResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 16:24:40.048 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.RoleController.Get (ProductManagementSystem.API) in 264.6088ms
+2025-05-16 16:24:40.060 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.RoleController.Get (ProductManagementSystem.API)'
+2025-05-16 16:24:40.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Role - 200 null application/json; charset=utf-8 321.2569ms
+2025-05-16 16:24:50.651 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/register - application/json 129
+2025-05-16 16:24:50.663 +05:30 [INF] CORS policy execution failed.
+2025-05-16 16:24:50.665 +05:30 [INF] Request origin https://localhost:7291 does not have permission to access the resource.
+2025-05-16 16:24:50.667 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Register (ProductManagementSystem.API)'
+2025-05-16 16:24:50.677 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Register(ProductManagementSystem.BLL.DTOs.Auth.RegisterRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 16:24:50.700 +05:30 [INF] Register attempt for user joe2 with email joe2@gmail.com
+2025-05-16 16:24:50.895 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 16:24:51.182 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2025-05-16 16:24:51.246 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__roleId_0
+2025-05-16 16:24:51.272 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-05-16 16:24:51.336 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2025-05-16 16:24:51.345 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-05-16 16:24:51.372 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 16:24:51.435 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+2025-05-16 16:24:51.509 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-16 16:24:51.585 +05:30 [INF] User joe2 registered successfully, issuing token
+2025-05-16 16:24:51.588 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Auth.AuthResponse'.
+2025-05-16 16:24:51.629 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Register (ProductManagementSystem.API) in 947.1545ms
+2025-05-16 16:24:51.632 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Register (ProductManagementSystem.API)'
+2025-05-16 16:24:51.635 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/register - 201 null application/json; charset=utf-8 983.2458ms
+2025-05-16 16:25:06.486 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/login - application/json 48
+2025-05-16 16:25:06.492 +05:30 [INF] CORS policy execution failed.
+2025-05-16 16:25:06.493 +05:30 [INF] Request origin https://localhost:7291 does not have permission to access the resource.
+2025-05-16 16:25:06.526 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 16:25:06.539 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Login(ProductManagementSystem.BLL.DTOs.Auth.LoginRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 16:25:06.562 +05:30 [INF] Login attempt for user joe2
+2025-05-16 16:25:06.570 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 16:25:06.720 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-16 16:25:06.725 +05:30 [INF] User joe2 logged in successfully
+2025-05-16 16:25:06.727 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Auth.AuthResponse'.
+2025-05-16 16:25:06.729 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API) in 186.9486ms
+2025-05-16 16:25:06.732 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 16:25:06.743 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/login - 200 null application/json; charset=utf-8 257.0079ms
+2025-05-16 16:34:08.990 +05:30 [INF] User profile is available. Using 'C:\Users\jaitl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-16 16:34:09.618 +05:30 [INF] Now listening on: https://localhost:7291
+2025-05-16 16:34:09.620 +05:30 [INF] Now listening on: http://localhost:5120
+2025-05-16 16:34:09.779 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 16:34:09.786 +05:30 [INF] Hosting environment: Development
+2025-05-16 16:34:09.787 +05:30 [INF] Content root path: C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API
+2025-05-16 16:34:11.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - null null
+2025-05-16 16:34:11.951 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-16 16:34:11.954 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_vs/browserLink - null null
+2025-05-16 16:34:11.962 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - 200 null text/html;charset=utf-8 690.8837ms
+2025-05-16 16:34:11.986 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 34.801ms
+2025-05-16 16:34:12.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.117ms
+2025-05-16 16:34:12.272 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - null null
+2025-05-16 16:34:12.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 134.7465ms
+2025-05-16 16:34:31.696 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/login - application/json 54
+2025-05-16 16:34:31.839 +05:30 [INF] CORS policy execution failed.
+2025-05-16 16:34:31.841 +05:30 [INF] Request origin https://localhost:7291 does not have permission to access the resource.
+2025-05-16 16:34:31.848 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 16:34:31.888 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Login(ProductManagementSystem.BLL.DTOs.Auth.LoginRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 16:34:32.223 +05:30 [INF] Login attempt for user jaitlimaye
+2025-05-16 16:34:32.226 +05:30 [INF] Login attempt for user jaitlimaye
+2025-05-16 16:34:34.449 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 16:34:34.823 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-16 16:34:34.866 +05:30 [INF] User jaitlimaye logged in successfully
+2025-05-16 16:34:34.869 +05:30 [INF] User jaitlimaye logged in successfully
+2025-05-16 16:34:34.882 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Auth.AuthResponse'.
+2025-05-16 16:34:34.901 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API) in 3005.3681ms
+2025-05-16 16:34:34.905 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 16:34:34.925 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/login - 200 null application/json; charset=utf-8 3229.0739ms
+2025-05-16 17:07:50.433 +05:30 [INF] User profile is available. Using 'C:\Users\jaitl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-16 17:07:50.983 +05:30 [INF] Now listening on: https://localhost:7291
+2025-05-16 17:07:50.986 +05:30 [INF] Now listening on: http://localhost:5120
+2025-05-16 17:07:51.142 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 17:07:51.144 +05:30 [INF] Hosting environment: Development
+2025-05-16 17:07:51.147 +05:30 [INF] Content root path: C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API
+2025-05-16 17:07:52.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - null null
+2025-05-16 17:07:52.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - 200 null text/html;charset=utf-8 598.6311ms
+2025-05-16 17:07:52.715 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_vs/browserLink - null null
+2025-05-16 17:07:52.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-16 17:07:52.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 104.0919ms
+2025-05-16 17:07:52.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_vs/browserLink - 200 null text/javascript; charset=UTF-8 170.7496ms
+2025-05-16 17:07:53.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - null null
+2025-05-16 17:07:53.069 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0924ms
+2025-05-16 17:08:11.363 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Auth/login - null null
+2025-05-16 17:08:11.479 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:11.482 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Auth/login - 204 null null 119.5283ms
+2025-05-16 17:08:11.485 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/login - application/json 45
+2025-05-16 17:08:11.496 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:11.499 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 17:08:11.548 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Login(ProductManagementSystem.BLL.DTOs.Auth.LoginRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 17:08:11.929 +05:30 [INF] Login attempt for user jaitlimaye
+2025-05-16 17:08:11.933 +05:30 [INF] Login attempt for user jaitlimaye
+2025-05-16 17:08:14.067 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 17:08:14.468 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-16 17:08:14.502 +05:30 [INF] User jaitlimaye logged in successfully
+2025-05-16 17:08:14.504 +05:30 [INF] User jaitlimaye logged in successfully
+2025-05-16 17:08:14.516 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Auth.AuthResponse'.
+2025-05-16 17:08:14.533 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API) in 2978.2536ms
+2025-05-16 17:08:14.538 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 17:08:14.568 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/login - 200 null application/json; charset=utf-8 3082.4253ms
+2025-05-16 17:08:14.713 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:08:14.713 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:08:14.723 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:14.723 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:14.725 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 12.0784ms
+2025-05-16 17:08:14.727 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 14.0532ms
+2025-05-16 17:08:14.729 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:08:14.861 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:14.932 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:14.951 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:15.211 +05:30 [INF] Fetching all products
+2025-05-16 17:08:15.224 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:08:15.394 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:08:15.418 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:08:15.425 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:08:15.431 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:08:15.433 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:08:15.437 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:15.461 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 505.8879ms
+2025-05-16 17:08:15.465 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:08:15.467 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 743.7785ms
+2025-05-16 17:08:15.476 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:15.481 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:08:15.483 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:15.487 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:15.493 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.495 +05:30 [INF] Fetching all products
+2025-05-16 17:08:15.498 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:08:15.504 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:08:15.514 +05:30 [INF] Fetching all categories
+2025-05-16 17:08:15.517 +05:30 [INF] Listing all categories
+2025-05-16 17:08:15.538 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:08:15.548 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:08:15.555 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:08:15.556 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:08:15.562 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:08:15.563 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:08:15.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:15.569 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 78.3489ms
+2025-05-16 17:08:15.572 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.575 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 109.8254ms
+2025-05-16 17:08:15.593 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:15.595 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:15.598 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:15.604 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 93.1708ms
+2025-05-16 17:08:15.606 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:08:15.608 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.612 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:15.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 132.6435ms
+2025-05-16 17:08:15.616 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.623 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:08:15.630 +05:30 [INF] Fetching all categories
+2025-05-16 17:08:15.632 +05:30 [INF] Listing all categories
+2025-05-16 17:08:15.639 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:08:15.645 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:15.646 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:15.648 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:15.652 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 24.6728ms
+2025-05-16 17:08:15.655 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:15.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 54.6882ms
+2025-05-16 17:08:39.700 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:08:39.715 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:39.716 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 16.2154ms
+2025-05-16 17:08:39.719 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Product - multipart/form-data; boundary=----WebKitFormBoundary8gUcIsbzdxKoI6wc 580586
+2025-05-16 17:08:39.742 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:39.744 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.Post (ProductManagementSystem.API)'
+2025-05-16 17:08:39.755 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Product.DetailProductResponse]] Post(ProductManagementSystem.BLL.DTOs.Product.CreateProductRequest) on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:39.843 +05:30 [INF] Creating product jeans in category 2
+2025-05-16 17:08:39.846 +05:30 [INF] Creating product with name: jeans
+2025-05-16 17:08:40.041 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 200), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [Name], [Price])
+OUTPUT INSERTED.[ProductId], INSERTED.[CreatedDate]
+VALUES (@p0, @p1, @p2, @p3);
+2025-05-16 17:08:40.099 +05:30 [INF] Product created with ID: 19
+2025-05-16 17:08:40.114 +05:30 [INF] Product image saved to: wwwroot\uploads\27f653cd-1608-4101-b9cc-160ee1153776.jpg
+2025-05-16 17:08:40.159 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ProductImages] ([ImageUrl], [ProductId])
+OUTPUT INSERTED.[ImageId], INSERTED.[UploadedDate]
+VALUES (@p0, @p1);
+2025-05-16 17:08:40.166 +05:30 [INF] Product image record created for product ID: 19
+2025-05-16 17:08:40.175 +05:30 [INF] Product created with ID 19
+2025-05-16 17:08:40.178 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Product.DetailProductResponse'.
+2025-05-16 17:08:40.202 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.Post (ProductManagementSystem.API) in 443.3929ms
+2025-05-16 17:08:40.205 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.Post (ProductManagementSystem.API)'
+2025-05-16 17:08:40.212 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Product - 201 null application/json; charset=utf-8 492.8906ms
+2025-05-16 17:08:43.646 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:08:43.653 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:43.655 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.657 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:43.661 +05:30 [INF] Fetching all products
+2025-05-16 17:08:43.662 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:08:43.674 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:08:43.681 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:08:43.685 +05:30 [INF] Fetched 3 products and 3 images.
+2025-05-16 17:08:43.686 +05:30 [INF] Returning product details for 3 products.
+2025-05-16 17:08:43.689 +05:30 [INF] Retrieved 3 products
+2025-05-16 17:08:43.692 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:43.695 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 34.2475ms
+2025-05-16 17:08:43.697 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.698 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:08:43.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 58.0463ms
+2025-05-16 17:08:43.704 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:43.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:08:43.740 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.743 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:43.745 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:43.746 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.750 +05:30 [INF] Fetching all products
+2025-05-16 17:08:43.751 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:08:43.752 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:08:43.762 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:08:43.766 +05:30 [INF] Fetching all categories
+2025-05-16 17:08:43.767 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:08:43.767 +05:30 [INF] Listing all categories
+2025-05-16 17:08:43.772 +05:30 [INF] Fetched 3 products and 3 images.
+2025-05-16 17:08:43.776 +05:30 [INF] Returning product details for 3 products.
+2025-05-16 17:08:43.778 +05:30 [INF] Retrieved 3 products
+2025-05-16 17:08:43.778 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:08:43.780 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:43.783 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:43.785 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 36.0472ms
+2025-05-16 17:08:43.786 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:43.792 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:43.790 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.794 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 37.2459ms
+2025-05-16 17:08:43.798 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 97.3952ms
+2025-05-16 17:08:43.800 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 81.6125ms
+2025-05-16 17:08:43.800 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:08:43.816 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:43.817 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.819 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:08:43.823 +05:30 [INF] Fetching all categories
+2025-05-16 17:08:43.825 +05:30 [INF] Listing all categories
+2025-05-16 17:08:43.831 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:08:43.836 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:43.837 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:43.840 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:43.842 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 18.9065ms
+2025-05-16 17:08:43.844 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:43.846 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 46.2637ms
+2025-05-16 17:08:43.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/uploads/27f653cd-1608-4101-b9cc-160ee1153776.jpg - null null
+2025-05-16 17:08:43.980 +05:30 [INF] Sending file. Request path: '/uploads/27f653cd-1608-4101-b9cc-160ee1153776.jpg'. Physical path: 'C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API\wwwroot\uploads\27f653cd-1608-4101-b9cc-160ee1153776.jpg'
+2025-05-16 17:08:43.983 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/uploads/27f653cd-1608-4101-b9cc-160ee1153776.jpg - 200 579984 image/jpeg 67.7692ms
+2025-05-16 17:08:51.818 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product/17 - null null
+2025-05-16 17:08:51.825 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:51.830 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product/17 - 204 null null 11.9507ms
+2025-05-16 17:08:51.832 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7291/api/Product/17 - multipart/form-data; boundary=----WebKitFormBoundary0XTH9XpMab4TODuG 689
+2025-05-16 17:08:51.842 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:51.844 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.Put (ProductManagementSystem.API)'
+2025-05-16 17:08:51.859 +05:30 [INF] Route matched with {action = "Put", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Product.DetailProductResponse]] Put(Int32, ProductManagementSystem.BLL.DTOs.Product.UpdateProductRequest) on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:51.870 +05:30 [INF] Updating product 17
+2025-05-16 17:08:51.875 +05:30 [INF] Starting update for product with ID 17
+2025-05-16 17:08:51.975 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2025-05-16 17:08:51.983 +05:30 [INF] Mapped update data to product entity for ID 17
+2025-05-16 17:08:51.987 +05:30 [INF] Keeping existing image for product ID 17
+2025-05-16 17:08:52.002 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 200), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [CategoryId] = @p0, [CreatedDate] = @p1, [Description] = @p2, [Name] = @p3, [Price] = @p4
+OUTPUT 1
+WHERE [ProductId] = @p5;
+2025-05-16 17:08:52.012 +05:30 [INF] Successfully updated product with ID 17
+2025-05-16 17:08:52.017 +05:30 [INF] Product 17 updated successfully
+2025-05-16 17:08:52.018 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Product.DetailProductResponse'.
+2025-05-16 17:08:52.022 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.Put (ProductManagementSystem.API) in 157.1711ms
+2025-05-16 17:08:52.028 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.Put (ProductManagementSystem.API)'
+2025-05-16 17:08:52.032 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7291/api/Product/17 - 200 null application/json; charset=utf-8 200.4993ms
+2025-05-16 17:08:54.069 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:08:54.072 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:08:54.081 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:54.084 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:54.085 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 16.956ms
+2025-05-16 17:08:54.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:08:54.087 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 15.4214ms
+2025-05-16 17:08:54.097 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:54.103 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.106 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:54.111 +05:30 [INF] Fetching all products
+2025-05-16 17:08:54.113 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:08:54.118 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:08:54.129 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:08:54.132 +05:30 [INF] Fetched 3 products and 3 images.
+2025-05-16 17:08:54.134 +05:30 [INF] Returning product details for 3 products.
+2025-05-16 17:08:54.135 +05:30 [INF] Retrieved 3 products
+2025-05-16 17:08:54.137 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:54.141 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 30.2675ms
+2025-05-16 17:08:54.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:08:54.144 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.147 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:54.149 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 58.8224ms
+2025-05-16 17:08:54.150 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.154 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:08:54.161 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:54.164 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:54.168 +05:30 [INF] Fetching all products
+2025-05-16 17:08:54.170 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.172 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:08:54.174 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:08:54.180 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:08:54.180 +05:30 [INF] Fetching all categories
+2025-05-16 17:08:54.184 +05:30 [INF] Listing all categories
+2025-05-16 17:08:54.185 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:08:54.191 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:08:54.193 +05:30 [INF] Fetched 3 products and 3 images.
+2025-05-16 17:08:54.198 +05:30 [INF] Returning product details for 3 products.
+2025-05-16 17:08:54.196 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:54.199 +05:30 [INF] Retrieved 3 products
+2025-05-16 17:08:54.200 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:54.203 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:54.205 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:54.208 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 40.098ms
+2025-05-16 17:08:54.213 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.211 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 31.0989ms
+2025-05-16 17:08:54.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 72.0716ms
+2025-05-16 17:08:54.218 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.222 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:08:54.231 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:54.233 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 73.1223ms
+2025-05-16 17:08:54.237 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:08:54.246 +05:30 [INF] Fetching all categories
+2025-05-16 17:08:54.247 +05:30 [INF] Listing all categories
+2025-05-16 17:08:54.252 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:08:54.259 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:54.260 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:08:54.262 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:08:54.264 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 18.666ms
+2025-05-16 17:08:54.270 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:08:54.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 50.6774ms
+2025-05-16 17:08:54.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/uploads/27f653cd-1608-4101-b9cc-160ee1153776.jpg - null null
+2025-05-16 17:08:54.290 +05:30 [INF] The file /uploads/27f653cd-1608-4101-b9cc-160ee1153776.jpg was not modified
+2025-05-16 17:08:54.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/uploads/27f653cd-1608-4101-b9cc-160ee1153776.jpg - 304 null image/jpeg 12.2398ms
+2025-05-16 17:08:58.713 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product/19 - null null
+2025-05-16 17:08:58.721 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:58.724 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product/19 - 204 null null 11.7721ms
+2025-05-16 17:08:58.727 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7291/api/Product/19 - null null
+2025-05-16 17:08:58.733 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:08:58.736 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.Delete (ProductManagementSystem.API)'
+2025-05-16 17:08:58.744 +05:30 [INF] Route matched with {action = "Delete", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:08:58.749 +05:30 [INF] Deleting product 19
+2025-05-16 17:08:58.757 +05:30 [INF] Deleting product images for product ID: 19
+2025-05-16 17:08:58.791 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__productId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ImageId], [p].[ImageUrl], [p].[ProductId], [p].[UploadedDate]
+FROM [ProductImages] AS [p]
+WHERE [p].[ProductId] = @__productId_0
+2025-05-16 17:08:58.816 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [ProductImages]
+OUTPUT 1
+WHERE [ImageId] = @p0;
+2025-05-16 17:08:58.824 +05:30 [INF] Deleted product images for product ID: 19
+2025-05-16 17:08:58.826 +05:30 [INF] Deleting product with ID: 19
+2025-05-16 17:08:58.831 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CreatedDate], [p].[Description], [p].[Name], [p].[Price]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2025-05-16 17:08:58.850 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [ProductId] = @p0;
+2025-05-16 17:08:58.861 +05:30 [INF] Deleted product with ID: 19
+2025-05-16 17:08:58.865 +05:30 [INF] Product 19 deleted
+2025-05-16 17:08:58.872 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-16 17:08:58.873 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.Delete (ProductManagementSystem.API) in 126.2015ms
+2025-05-16 17:08:58.876 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.Delete (ProductManagementSystem.API)'
+2025-05-16 17:08:58.878 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7291/api/Product/19 - 204 null null 151.6096ms
+2025-05-16 17:09:02.583 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:09:02.586 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:09:02.591 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:09:02.594 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:09:02.598 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 14.5493ms
+2025-05-16 17:09:02.599 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 12.9311ms
+2025-05-16 17:09:02.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:09:02.623 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:09:02.625 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.627 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:09:02.632 +05:30 [INF] Fetching all products
+2025-05-16 17:09:02.633 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:09:02.647 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:09:02.656 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:09:02.683 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:09:02.689 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:09:02.699 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:09:02.707 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:09:02.712 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 80.2866ms
+2025-05-16 17:09:02.715 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:09:02.720 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.724 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:09:02.728 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 111.1792ms
+2025-05-16 17:09:02.734 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:09:02.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:09:02.756 +05:30 [INF] Fetching all products
+2025-05-16 17:09:02.760 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:09:02.761 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:09:02.763 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.774 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:09:02.777 +05:30 [INF] Fetching all categories
+2025-05-16 17:09:02.778 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:09:02.778 +05:30 [INF] Listing all categories
+2025-05-16 17:09:02.787 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:09:02.789 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:09:02.791 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:09:02.794 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:09:02.795 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:09:02.797 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:09:02.798 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:09:02.800 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:09:02.801 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:09:02.803 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 26.3332ms
+2025-05-16 17:09:02.806 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 50.1645ms
+2025-05-16 17:09:02.808 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.810 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.812 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 66.0872ms
+2025-05-16 17:09:02.814 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 98.944ms
+2025-05-16 17:09:02.857 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:09:02.863 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:09:02.865 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.870 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:09:02.874 +05:30 [INF] Fetching all categories
+2025-05-16 17:09:02.877 +05:30 [INF] Listing all categories
+2025-05-16 17:09:02.883 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:09:02.889 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:09:02.892 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:09:02.898 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:09:02.901 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 27.2993ms
+2025-05-16 17:09:02.906 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:09:02.912 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 54.7976ms
+2025-05-16 17:14:41.644 +05:30 [INF] User profile is available. Using 'C:\Users\jaitl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-16 17:14:42.042 +05:30 [INF] Now listening on: https://localhost:7291
+2025-05-16 17:14:42.049 +05:30 [INF] Now listening on: http://localhost:5120
+2025-05-16 17:14:42.192 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 17:14:42.194 +05:30 [INF] Hosting environment: Development
+2025-05-16 17:14:42.195 +05:30 [INF] Content root path: C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API
+2025-05-16 17:14:43.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - null null
+2025-05-16 17:14:44.363 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - 200 null text/html;charset=utf-8 555.0468ms
+2025-05-16 17:14:44.368 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-16 17:14:44.374 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_vs/browserLink - null null
+2025-05-16 17:14:44.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 24.5248ms
+2025-05-16 17:14:44.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.5974ms
+2025-05-16 17:14:44.561 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - null null
+2025-05-16 17:14:44.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.7765ms
+2025-05-16 17:15:09.019 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:15:09.019 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:15:09.214 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:09.215 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:09.219 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 199.7728ms
+2025-05-16 17:15:09.219 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 200.0482ms
+2025-05-16 17:15:09.233 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:15:09.407 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:09.413 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:09.467 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:15:10.440 +05:30 [INF] Fetching all products
+2025-05-16 17:15:10.447 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:15:10.540 +05:30 [INF] Fetching list of all products
+2025-05-16 17:15:12.387 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:15:12.429 +05:30 [INF] Fetched 2 products
+2025-05-16 17:15:12.433 +05:30 [INF] Getting all ProductImages
+2025-05-16 17:15:12.449 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:15:12.455 +05:30 [INF] Retrieved 2 product images
+2025-05-16 17:15:12.458 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:15:12.463 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:15:12.466 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:15:12.483 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:12.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:15:12.517 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 3038.2568ms
+2025-05-16 17:15:12.519 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:12.520 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.537 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.543 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:15:12.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:15:12.556 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 3322.5711ms
+2025-05-16 17:15:12.552 +05:30 [INF] Fetching all products
+2025-05-16 17:15:12.568 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:12.573 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:15:12.575 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.576 +05:30 [INF] Fetching list of all products
+2025-05-16 17:15:12.587 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:15:12.594 +05:30 [INF] Fetching all categories
+2025-05-16 17:15:12.597 +05:30 [INF] Listing all categories
+2025-05-16 17:15:12.600 +05:30 [INF] Listing all categories
+2025-05-16 17:15:12.612 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:15:12.617 +05:30 [INF] Fetched 2 products
+2025-05-16 17:15:12.619 +05:30 [INF] Getting all ProductImages
+2025-05-16 17:15:12.622 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:15:12.626 +05:30 [INF] Retrieved 2 product images
+2025-05-16 17:15:12.628 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:15:12.630 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:15:12.633 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:15:12.636 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:12.641 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 93.573ms
+2025-05-16 17:15:12.647 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.648 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:15:12.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 141.7768ms
+2025-05-16 17:15:12.658 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:12.695 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:12.697 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:12.699 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:12.711 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 120.2347ms
+2025-05-16 17:15:12.715 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.717 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:15:12.718 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 169.5396ms
+2025-05-16 17:15:12.723 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:12.729 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.731 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:15:12.738 +05:30 [INF] Fetching all categories
+2025-05-16 17:15:12.740 +05:30 [INF] Listing all categories
+2025-05-16 17:15:12.741 +05:30 [INF] Listing all categories
+2025-05-16 17:15:12.813 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:15:12.817 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:12.819 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:12.821 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:12.825 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:12.830 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 94.2494ms
+2025-05-16 17:15:12.835 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:12.837 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 119.8811ms
+2025-05-16 17:15:16.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:15:16.313 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:16.315 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:16.317 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:15:16.329 +05:30 [INF] Fetching all categories
+2025-05-16 17:15:16.331 +05:30 [INF] Listing all categories
+2025-05-16 17:15:16.332 +05:30 [INF] Listing all categories
+2025-05-16 17:15:16.339 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:15:16.345 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:16.346 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:16.348 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:16.349 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:16.351 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 30.0689ms
+2025-05-16 17:15:16.355 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:16.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 48.4181ms
+2025-05-16 17:15:17.164 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:15:17.168 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:17.171 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 7.4027ms
+2025-05-16 17:15:17.175 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:15:17.184 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:17.185 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:17.188 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:15:17.202 +05:30 [INF] Fetching all products
+2025-05-16 17:15:17.203 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:15:17.205 +05:30 [INF] Fetching list of all products
+2025-05-16 17:15:17.212 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:15:17.217 +05:30 [INF] Fetched 2 products
+2025-05-16 17:15:17.218 +05:30 [INF] Getting all ProductImages
+2025-05-16 17:15:17.223 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:15:17.230 +05:30 [INF] Retrieved 2 product images
+2025-05-16 17:15:17.231 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:15:17.233 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:15:17.235 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:15:17.236 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:17.240 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 47.5921ms
+2025-05-16 17:15:17.243 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:17.245 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 70.1835ms
+2025-05-16 17:15:25.449 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Auth/login - null null
+2025-05-16 17:15:25.455 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:25.457 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Auth/login - 204 null null 7.5586ms
+2025-05-16 17:15:25.460 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/login - application/json 38
+2025-05-16 17:15:25.467 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:25.469 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 17:15:25.492 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Login(ProductManagementSystem.BLL.DTOs.Auth.LoginRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 17:15:25.561 +05:30 [INF] Login attempt for user joe
+2025-05-16 17:15:25.564 +05:30 [INF] Login attempt for user joe
+2025-05-16 17:15:25.981 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 17:15:26.274 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-16 17:15:26.292 +05:30 [INF] User joe logged in successfully
+2025-05-16 17:15:26.295 +05:30 [INF] User joe logged in successfully
+2025-05-16 17:15:26.296 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Auth.AuthResponse'.
+2025-05-16 17:15:26.300 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API) in 804.5133ms
+2025-05-16 17:15:26.302 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 17:15:26.314 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/login - 200 null application/json; charset=utf-8 854.0319ms
+2025-05-16 17:15:26.384 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:15:26.384 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 17:15:26.394 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:26.390 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:26.396 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 12.427ms
+2025-05-16 17:15:26.398 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 14.4543ms
+2025-05-16 17:15:26.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:15:26.412 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:26.413 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.415 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:15:26.418 +05:30 [INF] Fetching all products
+2025-05-16 17:15:26.421 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:15:26.422 +05:30 [INF] Fetching list of all products
+2025-05-16 17:15:26.427 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:15:26.430 +05:30 [INF] Fetched 2 products
+2025-05-16 17:15:26.432 +05:30 [INF] Getting all ProductImages
+2025-05-16 17:15:26.434 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:15:26.439 +05:30 [INF] Retrieved 2 product images
+2025-05-16 17:15:26.441 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:15:26.443 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:15:26.445 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:15:26.446 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:26.449 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 30.8928ms
+2025-05-16 17:15:26.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 17:15:26.453 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.457 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:26.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 57.9724ms
+2025-05-16 17:15:26.460 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:15:26.468 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 17:15:26.476 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:26.481 +05:30 [INF] Fetching all products
+2025-05-16 17:15:26.482 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.483 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 17:15:26.487 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:15:26.489 +05:30 [INF] Fetching list of all products
+2025-05-16 17:15:26.492 +05:30 [INF] Fetching all categories
+2025-05-16 17:15:26.494 +05:30 [INF] Listing all categories
+2025-05-16 17:15:26.496 +05:30 [INF] Listing all categories
+2025-05-16 17:15:26.496 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 17:15:26.513 +05:30 [INF] Fetched 2 products
+2025-05-16 17:15:26.514 +05:30 [INF] Getting all ProductImages
+2025-05-16 17:15:26.517 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 17:15:26.525 +05:30 [INF] Retrieved 2 product images
+2025-05-16 17:15:26.525 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:15:26.526 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 17:15:26.532 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:26.533 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 17:15:26.535 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:26.537 +05:30 [INF] Retrieved 2 products
+2025-05-16 17:15:26.539 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:26.541 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:26.542 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:26.545 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 64.3511ms
+2025-05-16 17:15:26.547 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 55.5159ms
+2025-05-16 17:15:26.550 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.552 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 103.2314ms
+2025-05-16 17:15:26.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 96.4301ms
+2025-05-16 17:15:26.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 17:15:26.583 +05:30 [INF] CORS policy execution successful.
+2025-05-16 17:15:26.584 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.587 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 17:15:26.591 +05:30 [INF] Fetching all categories
+2025-05-16 17:15:26.592 +05:30 [INF] Listing all categories
+2025-05-16 17:15:26.594 +05:30 [INF] Listing all categories
+2025-05-16 17:15:26.599 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 17:15:26.605 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:26.608 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:26.612 +05:30 [INF] Retrieved 3 categories
+2025-05-16 17:15:26.614 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 17:15:26.619 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 28.9177ms
+2025-05-16 17:15:26.667 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 17:15:26.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 103.1736ms
+2025-05-16 18:00:24.337 +05:30 [INF] User profile is available. Using 'C:\Users\jaitl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-16 18:00:24.927 +05:30 [INF] Now listening on: https://localhost:7291
+2025-05-16 18:00:24.931 +05:30 [INF] Now listening on: http://localhost:5120
+2025-05-16 18:00:25.151 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-16 18:00:25.153 +05:30 [INF] Hosting environment: Development
+2025-05-16 18:00:25.154 +05:30 [INF] Content root path: C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.API
+2025-05-16 18:00:27.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/index.html - null null
+2025-05-16 18:00:27.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-16 18:00:27.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/_vs/browserLink - null null
+2025-05-16 18:00:27.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/index.html - 200 null text/html;charset=utf-8 526.0069ms
+2025-05-16 18:00:27.610 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_framework/aspnetcore-browser-refresh.js - 200 16539 application/javascript; charset=utf-8 77.9465ms
+2025-05-16 18:00:27.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.1363ms
+2025-05-16 18:00:27.805 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - null null
+2025-05-16 18:00:27.882 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.9041ms
+2025-05-16 18:00:51.042 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Auth/login - null null
+2025-05-16 18:00:51.158 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:51.162 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Auth/login - 204 null null 119.1374ms
+2025-05-16 18:00:51.164 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Auth/login - application/json 45
+2025-05-16 18:00:51.175 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:51.179 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 18:00:51.220 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Auth.AuthResponse]] Login(ProductManagementSystem.BLL.DTOs.Auth.LoginRequest) on controller ProductManagementSystem.API.Controllers.AuthController (ProductManagementSystem.API).
+2025-05-16 18:00:51.513 +05:30 [INF] Login attempt for user jaitlimaye
+2025-05-16 18:00:51.515 +05:30 [INF] Login attempt for user jaitlimaye
+2025-05-16 18:00:53.513 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-16 18:00:53.874 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-05-16 18:00:53.914 +05:30 [INF] User jaitlimaye logged in successfully
+2025-05-16 18:00:53.917 +05:30 [INF] User jaitlimaye logged in successfully
+2025-05-16 18:00:53.927 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Auth.AuthResponse'.
+2025-05-16 18:00:53.943 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API) in 2716.2585ms
+2025-05-16 18:00:53.947 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.AuthController.Login (ProductManagementSystem.API)'
+2025-05-16 18:00:53.965 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Auth/login - 200 null application/json; charset=utf-8 2800.8956ms
+2025-05-16 18:00:54.090 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:00:54.101 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:00:54.116 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:54.117 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:54.120 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 30.2166ms
+2025-05-16 18:00:54.123 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 28.7519ms
+2025-05-16 18:00:54.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:00:54.215 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:54.217 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.229 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:00:54.488 +05:30 [INF] Fetching all products
+2025-05-16 18:00:54.492 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:00:54.497 +05:30 [INF] Fetching list of all products
+2025-05-16 18:00:54.644 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:00:54.653 +05:30 [INF] Fetched 2 products
+2025-05-16 18:00:54.656 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:00:54.690 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:00:54.695 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:00:54.697 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:00:54.703 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:00:54.707 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:00:54.709 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:54.729 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 496.5961ms
+2025-05-16 18:00:54.732 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:00:54.739 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.743 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:54.744 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 608.2777ms
+2025-05-16 18:00:54.746 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:00:54.775 +05:30 [INF] Fetching all products
+2025-05-16 18:00:54.776 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:00:54.777 +05:30 [INF] Fetching list of all products
+2025-05-16 18:00:54.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:00:54.794 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:54.797 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.805 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:00:54.810 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:00:54.815 +05:30 [INF] Fetching all categories
+2025-05-16 18:00:54.815 +05:30 [INF] Fetched 2 products
+2025-05-16 18:00:54.818 +05:30 [INF] Listing all categories
+2025-05-16 18:00:54.818 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:00:54.822 +05:30 [INF] Listing all categories
+2025-05-16 18:00:54.822 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:00:54.827 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:00:54.829 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:00:54.831 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:00:54.833 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:00:54.835 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:54.838 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:00:54.838 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 67.1865ms
+2025-05-16 18:00:54.845 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.846 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:54.847 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 114.6975ms
+2025-05-16 18:00:54.869 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:54.872 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:54.874 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:54.880 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 71.4233ms
+2025-05-16 18:00:54.882 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:00:54.883 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.887 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:54.889 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 99.6261ms
+2025-05-16 18:00:54.890 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.897 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:00:54.903 +05:30 [INF] Fetching all categories
+2025-05-16 18:00:54.905 +05:30 [INF] Listing all categories
+2025-05-16 18:00:54.907 +05:30 [INF] Listing all categories
+2025-05-16 18:00:54.911 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:00:54.915 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:54.917 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:54.919 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:54.921 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:54.924 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 23.7972ms
+2025-05-16 18:00:54.927 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:54.929 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 47.1272ms
+2025-05-16 18:00:56.141 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:00:56.145 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:56.146 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:56.149 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:00:56.163 +05:30 [INF] Fetching all categories
+2025-05-16 18:00:56.166 +05:30 [INF] Listing all categories
+2025-05-16 18:00:56.167 +05:30 [INF] Listing all categories
+2025-05-16 18:00:56.175 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:00:56.180 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:56.181 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:56.183 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:56.186 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:56.191 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 37.278ms
+2025-05-16 18:00:56.196 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:56.202 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 61.3576ms
+2025-05-16 18:00:57.440 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:00:57.459 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:57.460 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:57.463 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:00:57.473 +05:30 [INF] Fetching all categories
+2025-05-16 18:00:57.475 +05:30 [INF] Listing all categories
+2025-05-16 18:00:57.482 +05:30 [INF] Listing all categories
+2025-05-16 18:00:57.489 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:00:57.494 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:57.496 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:57.497 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:57.499 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:57.503 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 31.3594ms
+2025-05-16 18:00:57.507 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:57.510 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 70.5983ms
+2025-05-16 18:00:58.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:00:58.211 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:58.212 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:58.215 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:00:58.227 +05:30 [INF] Fetching all products
+2025-05-16 18:00:58.228 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:00:58.229 +05:30 [INF] Fetching list of all products
+2025-05-16 18:00:58.240 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:00:58.243 +05:30 [INF] Fetched 2 products
+2025-05-16 18:00:58.244 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:00:58.248 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:00:58.253 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:00:58.255 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:00:58.257 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:00:58.258 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:00:58.260 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:58.263 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 43.9873ms
+2025-05-16 18:00:58.266 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:58.271 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 65.0405ms
+2025-05-16 18:00:59.046 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:00:59.050 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:00:59.052 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:59.055 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:00:59.059 +05:30 [INF] Fetching all categories
+2025-05-16 18:00:59.060 +05:30 [INF] Listing all categories
+2025-05-16 18:00:59.062 +05:30 [INF] Listing all categories
+2025-05-16 18:00:59.071 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:00:59.075 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:59.077 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:59.078 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:00:59.080 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:00:59.083 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 24.4733ms
+2025-05-16 18:00:59.087 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:00:59.090 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 43.7762ms
+2025-05-16 18:01:04.023 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:01:04.027 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:01:04.028 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 5.1294ms
+2025-05-16 18:01:04.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:01:04.040 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:01:04.041 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:01:04.043 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:01:04.055 +05:30 [INF] Fetching all products
+2025-05-16 18:01:04.056 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:01:04.059 +05:30 [INF] Fetching list of all products
+2025-05-16 18:01:04.087 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:01:04.092 +05:30 [INF] Fetched 2 products
+2025-05-16 18:01:04.094 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:01:04.098 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:01:04.103 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:01:04.106 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:01:04.108 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:01:04.110 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:01:04.112 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:01:04.115 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 60.2457ms
+2025-05-16 18:01:04.121 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:01:04.123 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 86.1972ms
+2025-05-16 18:01:55.035 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:01:55.039 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:01:55.040 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:01:55.043 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:01:55.048 +05:30 [INF] Fetching all categories
+2025-05-16 18:01:55.050 +05:30 [INF] Listing all categories
+2025-05-16 18:01:55.051 +05:30 [INF] Listing all categories
+2025-05-16 18:01:55.057 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:01:55.062 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:01:55.064 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:01:55.066 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:01:55.068 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:01:55.070 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 22.4802ms
+2025-05-16 18:01:55.074 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:01:55.076 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 41.204ms
+2025-05-16 18:01:56.406 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:01:56.412 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:01:56.418 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 12.3327ms
+2025-05-16 18:01:56.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:01:56.439 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:01:56.440 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:01:56.442 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:01:56.450 +05:30 [INF] Fetching all products
+2025-05-16 18:01:56.452 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:01:56.453 +05:30 [INF] Fetching list of all products
+2025-05-16 18:01:56.459 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:01:56.472 +05:30 [INF] Fetched 2 products
+2025-05-16 18:01:56.474 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:01:56.478 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:01:56.484 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:01:56.486 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:01:56.488 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:01:56.490 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:01:56.492 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:01:56.497 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 48.1801ms
+2025-05-16 18:01:56.499 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:01:56.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 65.7392ms
+2025-05-16 18:11:27.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:11:27.510 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:27.511 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:27.513 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:11:27.517 +05:30 [INF] Fetching all categories
+2025-05-16 18:11:27.518 +05:30 [INF] Listing all categories
+2025-05-16 18:11:27.522 +05:30 [INF] Listing all categories
+2025-05-16 18:11:27.547 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:11:27.551 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:11:27.553 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:11:27.555 +05:30 [INF] Retrieved 3 categories
+2025-05-16 18:11:27.558 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:27.560 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 43.241ms
+2025-05-16 18:11:27.569 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:27.572 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 68.9478ms
+2025-05-16 18:11:44.463 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Category - null null
+2025-05-16 18:11:44.471 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:44.475 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Category - 204 null null 13.141ms
+2025-05-16 18:11:44.478 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7291/api/Category - application/json 40
+2025-05-16 18:11:44.490 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:44.493 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Create (ProductManagementSystem.API)'
+2025-05-16 18:11:44.500 +05:30 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]] Create(ProductManagementSystem.BLL.DTOs.Category.CreateCategoryRequest) on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:11:44.513 +05:30 [INF] Creating new category with Name Mobile
+2025-05-16 18:11:44.520 +05:30 [INF] Attempting to create category with Name Mobile
+2025-05-16 18:11:44.525 +05:30 [INF] Creating a new category with name Mobile
+2025-05-16 18:11:44.703 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Description], [Name])
+OUTPUT INSERTED.[CategoryId], INSERTED.[CreatedDate]
+VALUES (@p0, @p1);
+2025-05-16 18:11:44.745 +05:30 [INF] Created category with id 5
+2025-05-16 18:11:44.750 +05:30 [INF] Category created successfully with ID 5
+2025-05-16 18:11:44.756 +05:30 [INF] Created category 5
+2025-05-16 18:11:44.762 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse'.
+2025-05-16 18:11:44.788 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.Create (ProductManagementSystem.API) in 279.3302ms
+2025-05-16 18:11:44.794 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Create (ProductManagementSystem.API)'
+2025-05-16 18:11:44.796 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7291/api/Category - 201 null application/json; charset=utf-8 318.9939ms
+2025-05-16 18:11:47.590 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:11:47.596 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:11:47.603 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:47.612 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:47.616 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 19.5125ms
+2025-05-16 18:11:47.613 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 23.3714ms
+2025-05-16 18:11:47.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:11:47.638 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:47.639 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.642 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:11:47.647 +05:30 [INF] Fetching all products
+2025-05-16 18:11:47.648 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:11:47.649 +05:30 [INF] Fetching list of all products
+2025-05-16 18:11:47.656 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:11:47.662 +05:30 [INF] Fetched 2 products
+2025-05-16 18:11:47.664 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:11:47.668 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:11:47.673 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:11:47.674 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:11:47.676 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:11:47.679 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:11:47.683 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:47.687 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 40.6653ms
+2025-05-16 18:11:47.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:11:47.692 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.696 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:47.698 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 76.196ms
+2025-05-16 18:11:47.700 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.708 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:11:47.710 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:11:47.715 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:47.719 +05:30 [INF] Fetching all products
+2025-05-16 18:11:47.721 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.723 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:11:47.724 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:11:47.726 +05:30 [INF] Fetching list of all products
+2025-05-16 18:11:47.730 +05:30 [INF] Fetching all categories
+2025-05-16 18:11:47.732 +05:30 [INF] Listing all categories
+2025-05-16 18:11:47.734 +05:30 [INF] Listing all categories
+2025-05-16 18:11:47.734 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:11:47.747 +05:30 [INF] Fetched 2 products
+2025-05-16 18:11:47.748 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:11:47.751 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:11:47.759 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:11:47.761 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:11:47.766 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:11:47.770 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:11:47.772 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:47.777 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 58.0868ms
+2025-05-16 18:11:47.775 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:11:47.780 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.785 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:47.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 97.3809ms
+2025-05-16 18:11:47.789 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:47.795 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:47.796 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:47.799 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 69.2638ms
+2025-05-16 18:11:47.802 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:11:47.805 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 96.1715ms
+2025-05-16 18:11:47.808 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:47.814 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.817 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:11:47.821 +05:30 [INF] Fetching all categories
+2025-05-16 18:11:47.822 +05:30 [INF] Listing all categories
+2025-05-16 18:11:47.823 +05:30 [INF] Listing all categories
+2025-05-16 18:11:47.827 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:11:47.831 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:47.833 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:47.835 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:47.836 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:47.839 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 18.01ms
+2025-05-16 18:11:47.841 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:47.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 42.0613ms
+2025-05-16 18:11:49.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:11:49.210 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:49.211 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:49.213 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:11:49.218 +05:30 [INF] Fetching all categories
+2025-05-16 18:11:49.220 +05:30 [INF] Listing all categories
+2025-05-16 18:11:49.222 +05:30 [INF] Listing all categories
+2025-05-16 18:11:49.226 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:11:49.233 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:49.237 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:49.240 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:49.242 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:49.245 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 28.0379ms
+2025-05-16 18:11:49.248 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:49.250 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 44.6741ms
+2025-05-16 18:11:51.519 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:11:51.525 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:51.526 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:51.528 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:11:51.532 +05:30 [INF] Fetching all products
+2025-05-16 18:11:51.533 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:11:51.536 +05:30 [INF] Fetching list of all products
+2025-05-16 18:11:51.543 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:11:51.546 +05:30 [INF] Fetched 2 products
+2025-05-16 18:11:51.549 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:11:51.554 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:11:51.563 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:11:51.565 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:11:51.571 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:11:51.574 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:11:51.576 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:51.581 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 49.4598ms
+2025-05-16 18:11:51.591 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:51.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 79.3607ms
+2025-05-16 18:11:56.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:11:56.984 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:11:56.986 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:56.988 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:11:56.993 +05:30 [INF] Fetching all categories
+2025-05-16 18:11:56.994 +05:30 [INF] Listing all categories
+2025-05-16 18:11:56.996 +05:30 [INF] Listing all categories
+2025-05-16 18:11:57.003 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:11:57.009 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:57.012 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:57.014 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:11:57.016 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:11:57.020 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 27.5082ms
+2025-05-16 18:11:57.026 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:11:57.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 49.7203ms
+2025-05-16 18:22:35.064 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:22:35.064 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:22:35.081 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:35.084 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:35.094 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 30.9177ms
+2025-05-16 18:22:35.111 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 47.3229ms
+2025-05-16 18:22:35.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:22:35.141 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:35.143 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.146 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:22:35.154 +05:30 [INF] Fetching all products
+2025-05-16 18:22:35.157 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:22:35.160 +05:30 [INF] Fetching list of all products
+2025-05-16 18:22:35.191 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:22:35.195 +05:30 [INF] Fetched 2 products
+2025-05-16 18:22:35.196 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:22:35.199 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:22:35.204 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:22:35.206 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:22:35.207 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:22:35.209 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:22:35.211 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:22:35.214 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 62.4607ms
+2025-05-16 18:22:35.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:22:35.222 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.268 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:35.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 147.7145ms
+2025-05-16 18:22:35.281 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.290 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:22:35.295 +05:30 [INF] Fetching all products
+2025-05-16 18:22:35.297 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:22:35.299 +05:30 [INF] Fetching list of all products
+2025-05-16 18:22:35.352 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:22:35.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:22:35.375 +05:30 [INF] Fetched 2 products
+2025-05-16 18:22:35.381 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:22:35.379 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:35.384 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:22:35.384 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.390 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:22:35.392 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:22:35.393 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:22:35.395 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:22:35.391 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:22:35.396 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:22:35.400 +05:30 [INF] Fetching all categories
+2025-05-16 18:22:35.403 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 108.1376ms
+2025-05-16 18:22:35.404 +05:30 [INF] Listing all categories
+2025-05-16 18:22:35.407 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.408 +05:30 [INF] Listing all categories
+2025-05-16 18:22:35.411 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 190.8535ms
+2025-05-16 18:22:35.420 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:22:35.459 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:35.467 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:35.471 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:35.474 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:22:35.477 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 77.8899ms
+2025-05-16 18:22:35.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:22:35.483 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 125.2889ms
+2025-05-16 18:22:35.488 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:35.498 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.500 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:22:35.505 +05:30 [INF] Fetching all categories
+2025-05-16 18:22:35.508 +05:30 [INF] Listing all categories
+2025-05-16 18:22:35.543 +05:30 [INF] Listing all categories
+2025-05-16 18:22:35.564 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:22:35.591 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:35.595 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:35.597 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:35.599 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:22:35.606 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 101.5171ms
+2025-05-16 18:22:35.612 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:35.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 133.6735ms
+2025-05-16 18:22:37.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:22:37.211 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:22:37.212 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:37.214 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:22:37.218 +05:30 [INF] Fetching all categories
+2025-05-16 18:22:37.222 +05:30 [INF] Listing all categories
+2025-05-16 18:22:37.224 +05:30 [INF] Listing all categories
+2025-05-16 18:22:37.230 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:22:37.235 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:37.239 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:37.241 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:22:37.243 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:22:37.246 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 27.9849ms
+2025-05-16 18:22:37.249 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:22:37.251 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 43.319ms
+2025-05-16 18:24:31.970 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Category/5 - null null
+2025-05-16 18:24:31.991 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:24:31.992 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Category/5 - 204 null null 22.998ms
+2025-05-16 18:24:32.050 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7291/api/Category/5 - application/json 50
+2025-05-16 18:24:32.065 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:24:32.066 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Update (ProductManagementSystem.API)'
+2025-05-16 18:24:32.077 +05:30 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]] Update(Int32, ProductManagementSystem.BLL.DTOs.Category.UpdateCategoryRequest) on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:24:32.087 +05:30 [INF] Updating category 5
+2025-05-16 18:24:32.092 +05:30 [WRN] URL ID 5 does not match payload CategoryId 0
+2025-05-16 18:24:32.095 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-05-16 18:24:32.097 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.Update (ProductManagementSystem.API) in 16.0269ms
+2025-05-16 18:24:32.099 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Update (ProductManagementSystem.API)'
+2025-05-16 18:24:32.100 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7291/api/Category/5 - 400 null text/plain; charset=utf-8 50.4414ms
+2025-05-16 18:26:38.867 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Category/5 - null null
+2025-05-16 18:26:38.883 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:38.884 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Category/5 - 204 null null 17.2892ms
+2025-05-16 18:26:38.896 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7291/api/Category/5 - application/json 65
+2025-05-16 18:26:38.915 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:38.917 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Update (ProductManagementSystem.API)'
+2025-05-16 18:26:38.919 +05:30 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]] Update(Int32, ProductManagementSystem.BLL.DTOs.Category.UpdateCategoryRequest) on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:26:38.928 +05:30 [INF] Updating category 5
+2025-05-16 18:26:38.931 +05:30 [INF] Updating category with ID 5
+2025-05-16 18:26:38.935 +05:30 [INF] Updating category with id 5
+2025-05-16 18:26:39.028 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CreatedDate], [c].[Description], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryId] = @__p_0
+2025-05-16 18:26:39.052 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Categories] SET [CreatedDate] = @p0, [Description] = @p1, [Name] = @p2
+OUTPUT 1
+WHERE [CategoryId] = @p3;
+2025-05-16 18:26:39.061 +05:30 [INF] Updated category with id 5
+2025-05-16 18:26:39.062 +05:30 [INF] Successfully updated category with ID 5
+2025-05-16 18:26:39.064 +05:30 [INF] Updated category 5
+2025-05-16 18:26:39.065 +05:30 [INF] Executing OkObjectResult, writing value of type 'ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse'.
+2025-05-16 18:26:39.067 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.Update (ProductManagementSystem.API) in 142.0669ms
+2025-05-16 18:26:39.069 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Update (ProductManagementSystem.API)'
+2025-05-16 18:26:39.072 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7291/api/Category/5 - 200 null application/json; charset=utf-8 176.4124ms
+2025-05-16 18:26:50.822 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:26:50.822 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:26:50.830 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:50.834 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:50.835 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 14.1267ms
+2025-05-16 18:26:50.844 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 22.063ms
+2025-05-16 18:26:50.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:26:50.864 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:50.865 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:50.867 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:26:50.872 +05:30 [INF] Fetching all products
+2025-05-16 18:26:50.881 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:26:50.882 +05:30 [INF] Fetching list of all products
+2025-05-16 18:26:50.892 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:26:50.897 +05:30 [INF] Fetched 2 products
+2025-05-16 18:26:50.900 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:26:50.906 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:26:50.916 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:26:50.920 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:26:50.924 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:26:50.926 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:26:50.929 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:26:50.933 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 61.2801ms
+2025-05-16 18:26:50.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Product - null null
+2025-05-16 18:26:51.014 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.015 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:51.027 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.039 +05:30 [INF] Route matched with {action = "GetList", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.ProductController (ProductManagementSystem.API).
+2025-05-16 18:26:51.051 +05:30 [INF] Fetching all products
+2025-05-16 18:26:51.054 +05:30 [INF] Fetching all products and associated images.
+2025-05-16 18:26:51.056 +05:30 [INF] Fetching list of all products
+2025-05-16 18:26:51.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 185.4091ms
+2025-05-16 18:26:51.062 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:26:51.063 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[Name], [p].[Description], [p].[Price], [p].[CategoryId]
+FROM [Products] AS [p]
+2025-05-16 18:26:51.067 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:51.073 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.081 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:26:51.128 +05:30 [INF] Fetching all categories
+2025-05-16 18:26:51.129 +05:30 [INF] Listing all categories
+2025-05-16 18:26:51.131 +05:30 [INF] Listing all categories
+2025-05-16 18:26:51.072 +05:30 [INF] Fetched 2 products
+2025-05-16 18:26:51.141 +05:30 [INF] Getting all ProductImages
+2025-05-16 18:26:51.146 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:26:51.184 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:51.186 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:51.188 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:51.190 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:26:51.193 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 64.6479ms
+2025-05-16 18:26:51.194 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.196 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 133.5677ms
+2025-05-16 18:26:51.212 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ImageUrl], [p].[ProductId]
+FROM [ProductImages] AS [p]
+2025-05-16 18:26:51.215 +05:30 [INF] Retrieved 2 product images
+2025-05-16 18:26:51.217 +05:30 [INF] Fetched 2 products and 2 images.
+2025-05-16 18:26:51.218 +05:30 [INF] Returning product details for 2 products.
+2025-05-16 18:26:51.220 +05:30 [INF] Retrieved 2 products
+2025-05-16 18:26:51.221 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[ProductManagementSystem.DAL.Entities.Product, ProductManagementSystem.DAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[ProductManagementSystem.BLL.DTOs.Product.GetAllProductsResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:26:51.224 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API) in 172.6133ms
+2025-05-16 18:26:51.226 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.ProductController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.228 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Product - 200 null application/json; charset=utf-8 266.5304ms
+2025-05-16 18:26:51.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:26:51.496 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:51.498 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.501 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:26:51.506 +05:30 [INF] Fetching all categories
+2025-05-16 18:26:51.511 +05:30 [INF] Listing all categories
+2025-05-16 18:26:51.512 +05:30 [INF] Listing all categories
+2025-05-16 18:26:51.517 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:26:51.521 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:51.523 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:51.524 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:51.526 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:26:51.529 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 23.1017ms
+2025-05-16 18:26:51.533 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:51.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 57.4377ms
+2025-05-16 18:26:53.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7291/api/Category - null null
+2025-05-16 18:26:53.175 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:26:53.176 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:53.178 +05:30 [INF] Route matched with {action = "GetList", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse]]] GetList() on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:26:53.183 +05:30 [INF] Fetching all categories
+2025-05-16 18:26:53.184 +05:30 [INF] Listing all categories
+2025-05-16 18:26:53.185 +05:30 [INF] Listing all categories
+2025-05-16 18:26:53.191 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[Name], [c].[Description], [c].[CreatedDate]
+FROM [Categories] AS [c]
+2025-05-16 18:26:53.195 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:53.198 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:53.200 +05:30 [INF] Retrieved 4 categories
+2025-05-16 18:26:53.202 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductManagementSystem.BLL.DTOs.Category.GetCategoryResponse, ProductManagementSystem.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-16 18:26:53.206 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API) in 23.985ms
+2025-05-16 18:26:53.210 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.GetList (ProductManagementSystem.API)'
+2025-05-16 18:26:53.212 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7291/api/Category - 200 null application/json; charset=utf-8 44.2098ms
+2025-05-16 18:27:00.696 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Category/5 - null null
+2025-05-16 18:27:00.699 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:27:00.701 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Category/5 - 204 null null 5.0733ms
+2025-05-16 18:27:00.708 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7291/api/Category/5 - null null
+2025-05-16 18:27:00.715 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:27:00.717 +05:30 [INF] Executing endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Delete (ProductManagementSystem.API)'
+2025-05-16 18:27:00.726 +05:30 [INF] Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ProductManagementSystem.API.Controllers.CategoryController (ProductManagementSystem.API).
+2025-05-16 18:27:00.731 +05:30 [INF] Deleting category 5
+2025-05-16 18:27:00.734 +05:30 [INF] Attempting to delete category with ID 5
+2025-05-16 18:27:00.739 +05:30 [INF] Deleting category with id 5
+2025-05-16 18:27:00.745 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryId], [c].[CreatedDate], [c].[Description], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryId] = @__p_0
+2025-05-16 18:27:00.779 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+OUTPUT 1
+WHERE [CategoryId] = @p0;
+2025-05-16 18:27:00.791 +05:30 [INF] Deleted category with id 5
+2025-05-16 18:27:00.792 +05:30 [INF] Category with ID 5 deleted successfully
+2025-05-16 18:27:00.795 +05:30 [INF] Deleted category 5
+2025-05-16 18:27:00.807 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-05-16 18:27:00.809 +05:30 [INF] Executed action ProductManagementSystem.API.Controllers.CategoryController.Delete (ProductManagementSystem.API) in 80.0279ms
+2025-05-16 18:27:00.812 +05:30 [INF] Executed endpoint 'ProductManagementSystem.API.Controllers.CategoryController.Delete (ProductManagementSystem.API)'
+2025-05-16 18:27:00.814 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7291/api/Category/5 - 204 null null 106.3415ms
+2025-05-16 18:27:11.559 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:27:11.560 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7291/api/Product - null null
+2025-05-16 18:27:11.575 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:27:11.615 +05:30 [INF] CORS policy execution successful.
+2025-05-16 18:27:11.641 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7291/api/Product - 204 null null 82.0387ms

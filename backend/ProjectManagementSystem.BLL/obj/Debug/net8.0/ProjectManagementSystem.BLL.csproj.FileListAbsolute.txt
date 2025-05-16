@@ -1,0 +1,11 @@
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProjectManagementSystem.BLL.deps.json
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProjectManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\bin\Debug\net8.0\ProjectManagementSystem.BLL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProjectManagementSystem.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProjectManagementSystem.BLL.AssemblyInfoInputs.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProjectManagementSystem.BLL.AssemblyInfo.cs
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProjectManagementSystem.BLL.csproj.CoreCompileInputs.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProjectManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\refint\ProjectManagementSystem.BLL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ProjectManagementSystem.BLL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.BLL\obj\Debug\net8.0\ref\ProjectManagementSystem.BLL.dll

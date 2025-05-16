@@ -1,0 +1,14 @@
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.csproj.AssemblyReference.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.AssemblyInfoInputs.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.AssemblyInfo.cs
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.csproj.CoreCompileInputs.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\bin\Debug\net8.0\ProjectManagementSystem.DAL.deps.json
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\bin\Debug\net8.0\ProjectManagementSystem.DAL.runtimeconfig.json
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\bin\Debug\net8.0\ProjectManagementSystem.DAL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\bin\Debug\net8.0\ProjectManagementSystem.DAL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\refint\ProjectManagementSystem.DAL.dll
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.pdb
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ProjectManagementSystem.DAL.genruntimeconfig.cache
+C:\Users\jaitl\source\repos\ProjectManagementSystem\ProjectManagementSystem.DAL\obj\Debug\net8.0\ref\ProjectManagementSystem.DAL.dll
